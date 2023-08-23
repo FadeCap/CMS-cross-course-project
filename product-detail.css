@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+}
+
+.logo {
+    color: black;
+}

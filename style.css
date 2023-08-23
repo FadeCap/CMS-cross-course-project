@@ -1,14 +1,14 @@
 body {
     margin: 0;
-    background-color: darkgreen;
+    background-color: lightblue;
     text-align: center;
-    width: 70%;
-    overflow: hidden;
+    width: 100%;
     font-size: 16px;
 }
 
 #root {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
@@ -20,9 +20,20 @@ body {
 }
 
 .logo {
-    color: white;
+    color: black;
 }
 
+.featured {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.gallery {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
 
 .product-container h2 {
     font-size: 1rem;
@@ -32,26 +43,18 @@ body {
     font-size: 0.8rem;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    padding: 2rem; 
-}
-
 .product-container {
-    border: 2px solid red;
-    max-width: 100px;
-    max-height: 200px;
+    max-width: 200px;
+    max-height: 300px;
     text-align: center; 
     background-color: white;
     padding: 1rem;
     box-sizing: border-box; 
+    
 }
 
 .product-image {
-    max-width: 50px;
+    max-width: 100px;
     height: auto;
     margin-top: 1rem;
 }
